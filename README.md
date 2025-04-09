@@ -98,4 +98,4 @@ Ideas, suggestions, and pull requests are always welcome! 🙌
 
 ## ✨ Author
 
-Made with ☕ and Bash by [https://github.com/MohammadAliMehri]
+Made with ☕ and Bash by [Me](https://github.com/MohammadAliMehri)
