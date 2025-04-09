@@ -5,6 +5,11 @@ Ideal for beginner penetration testers, CTF players, and anyone learning the bas
 
 ---
 
+**Clone:**
+```
+git clone https://github.com/MohammadAliMehri/Basic-Web-Reconnaissance-Toolkit.git
+```
+
 ## 📁 Included Scripts
 
 ### 1. `basic-web-recon.sh`
