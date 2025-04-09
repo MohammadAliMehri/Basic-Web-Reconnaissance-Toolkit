@@ -46,6 +46,93 @@ chmod +x simpleWhois-DNSRecon.sh
 You'll be asked to input a domain.  
 Results saved in: `domain_scan_example.com_<timestamp>.txt`
 
+**Example Output**
+
+```
+./simpleWhois-DNSRecon.sh  
+Enter your domain to extract DNS details: github.com
+
+[+] Starting DNS reconnaissance for github.com at Wed Apr  9 02:36:24 PM EDT 2025
+
+[+] WHOIS Information:
+   Domain Name: GITHUB.COM
+   Registry Domain ID: 1264983250_DOMAIN_COM-VRSN
+   Registrar WHOIS Server: whois.markmonitor.com
+   Registrar URL: http://www.markmonitor.com
+   Updated Date: 2024-09-07T09:16:32Z
+   Creation Date: 2007-10-09T18:20:50Z
+   Registry Expiry Date: 2026-10-09T18:20:50Z
+   Registrar: MarkMonitor Inc.
+   Registrar IANA ID: 292
+   Registrar Abuse Contact Email: abusecomplaints@markmonitor.com
+   Registrar Abuse Contact Phone: +1.2086851750
+   Domain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited
+   Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+   Domain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited
+   Name Server: DNS1.P08.NSONE.NET
+   Name Server: DNS2.P08.NSONE.NET
+   Name Server: DNS3.P08.NSONE.NET
+   Name Server: DNS4.P08.NSONE.NET
+   Name Server: NS-1283.AWSDNS-32.ORG
+   Name Server: NS-1707.AWSDNS-21.CO.UK
+
+[+] DNS Records:
+
+A Records (IPv4):
+  140.82.121.3
+
+AAAA Records (IPv6):
+
+MX Records (Mail Servers):
+  1 aspmx.l.google.com.
+  5 alt1.aspmx.l.google.com.
+  5 alt2.aspmx.l.google.com.
+  10 alt3.aspmx.l.google.com.
+  10 alt4.aspmx.l.google.com.
+
+NS Records (Name Servers):
+  ns-520.awsdns-01.net.
+  ns-1283.awsdns-32.org.
+  ns-1707.awsdns-21.co.uk.
+  dns1.p08.nsone.net.
+  dns2.p08.nsone.net.
+  dns3.p08.nsone.net.
+  dns4.p08.nsone.net.
+  ns-421.awsdns-52.com.
+
+TXT Records:
+  "atlassian-domain-verification=jjgw98AKv2aeoYFxiL/VFaoyPkn3undEssTRuMg6C/3Fp/iqhkV4HVV7WjYlVeF8"
+  "v=spf1 ip4:192.30.252.0/22 include:_netblocks.google.com include:_netblocks2.google.com include:_netblocks3.google.com include:spf.protection.outlook.com include:mail.zendesk.com include:_spf.salesforce.com include:servers.mcsv.net include:mktomail.com ip" "4:166.78.69.169 ip4:166.78.69.170 ip4:166.78.71.131 ip4:167.89.101.2 ip4:167.89.101.192/28 ip4:192.254.112.60 ip4:192.254.112.98/31 ip4:192.254.113.10 ip4:192.254.113.101 ip4:192.254.114.176 ip4:62.253.227.114 ~all"
+  "MS=ms44452932"
+  "MS=ms58704441"
+  "apple-domain-verification=RyQhdzTl6Z6x8ZP4"
+  "MS=6BF03E6AF5CB689E315FB6199603BABF2C88D805"
+  "docusign=087098e3-3d46-47b7-9b4e-8a23028154cd"
+  "loom-site-verification=f3787154f1154b7880e720a511ea664d"
+  "shopify-verification-code=t1YPwcmvnxZyBycaCpk1MPyWoFs72o"
+  "krisp-domain-verification=ZlyiK7XLhnaoUQb2hpak1PLY7dFkl1WE"
+  "miro-verification=d2e174fdb00c71e0bcf58f8e58c3da2dd80dcfa9"
+  "facebook-domain-verification=39xu4jzl7roi7x0n93ldkxjiaarx50"
+  "calendly-site-verification=at0DQARi7IZvJtXQAWhMqpmIzpvoBNF7aam5VKKxP"
+  "google-site-verification=82Le34Flgtd15ojYhHlGF_6g72muSjamlMVThBOJpks"
+  "google-site-verification=UTM-3akMgubp6tQtgEuAkYNYLyYAvpTnnSrDMWoDR3o"
+  "stripe-verification=f88ef17321660a01bab1660454192e014defa29ba7b8de9633c69d6b4912217f"
+  "adobe-idp-site-verification=b92c9e999aef825edc36e0a3d847d2dbad5b2fc0e05c79ddd7a16139b48ecf4b"
+
+CNAME Records:
+
+SOA Record:
+  dns1.p08.nsone.net. hostmaster.nsone.net. 1656468023 43200 7200 1209600 3600
+
+[+] Scan completed at Wed Apr  9 02:36:28 PM EDT 2025
+
+--------------------------------------------------
+✅ Recon completed. Results saved to domain_scan_github.com_20250409_143624.txt
+
+```
+
+
+
 ---
 
 ### 3. `basic-subdomain-finder.sh`
