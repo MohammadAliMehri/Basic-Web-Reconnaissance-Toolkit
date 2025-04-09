@@ -94,7 +94,6 @@ Results saved in: `domain_scan_example.com_<timestamp>.txt`
 **Example Output**
 
 ```
-./simpleWhois-DNSRecon.sh  
 Enter your domain to extract DNS details: example.com
 
 [+] Starting DNS reconnaissance for example.com at Thu Apr 10 15:30:45 UTC 2025
@@ -165,7 +164,6 @@ Live subdomains are printed and saved in: `subdomain_scan_example.com_<timestamp
 **Example Output**
 
 ```
-./basic-subdomain-finder.sh
 Enter your domain to find subdomains: github.com
 [+] Finding subdomains for: github.com
 api.security.github.com [UP] → 140.82.113.22
